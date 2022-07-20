@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-outer {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+    background-color: white;
+
+}
+
+#nav {
+    width: 70%;
+    display: flex;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+#nav>#left-nav {
+    width: 15%;
+}
+
+#left-nav>a>img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.location {
+    color: gray;
+}
+
+#nav>#right-nav {
+    width: 80%;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.search-basket {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.search {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.search>input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #84c225;
+    padding-left: 20px;
+}
+
+.search>img {
+    width: 5.9%;
+    cursor: pointer;
+}
+
+.basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 5px 5px;
+}
+
+
+/* <!-- <------------------------------------------------Nav Bar end ------------------------------------------------> */
+/* <!-- <------------------------------------------------category css start  ------------------------------------------------> */
+
+
+#category {
+    background-color: #84c225;
+    width: 20%;
+}
+
+#category>ul {
+    color: white;
+    position: absolute;
+    z-index: 999;
+    margin-top: 0px;
+}
+
+#category>ul>img {
+    width: 10%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#category>ul>li {
+    background-color: white;
+    border: 1px solid #c1c3be;
+    visibility: hidden;
+    left: 0;
+    display: none;
+
+}
+
+.second {
+    
+    display: flex;
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10 px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#category>ul:hover>li {
+    width: 200%;
+    visibility: visible;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+}
+
+#offers {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#offers>img {
+    width: 20%;
+    margin-left: 20px;
+    transform: rotate(270deg);
+}
+
+/* <!-- <------------------------------------------------category css end  ------------------------------------------------> */
+
+/* <!-- <------------------------------------------------Image Carousel css start ------------------------------------------------> */
+
+.carousel-indicators li {
+    margin: 0;
+    width: 10%;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(59, 56, 56);
+    line-height: 120%;
+    text-indent: 0px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    border-bottom: 5px solid green;
+}
+
+.carousel-indicators li::first-line {
+    font-weight: bold;
+}
+
+.carousel-indicators {
+    margin-bottom: -10px;
+}
+
+/* <!-- <------------------------------------------------Image Carousel css end ------------------------------------------------> */
+
+/* <!-- <------------------------------------------------Offer button start ------------------------------------------------> */
+#offer_btn {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#offer_btn>div {
+    width: 15%;
+    display: flex;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#offer_btn>div:nth-child(2) {
+    background-color: white;
+    padding: 0px;
+}
+
+#offer_btn>div:nth-child(3) {
+    background-color: #4c6020;
+    color: white;
+}
+
+#offer_btn>div>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* <!-- <------------------------------------------------Offer button end ------------------------------------------------> */
+
+
+/* <!-- <------------------------------------------------My smart basket start  ------------------------------------------------> */
+
+/* <!-- <------------------------------------------------My smart basket end  ------------------------------------------------> */
+
+
+/* <!-- <------------------------------------------------Bank/Top offer start  ------------------------------------------------> */
+#bank_offer,#top_offer{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between
+}
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+#bank_offer>div,#top_offer>div {
+    width: 24%;
+}
+#bank_offer>div:hover,#top_offer>div:hover{
+    cursor: pointer;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    
+}
+#bank_offer>div>img ,#top_offer>div>img{
+    width: 100%;
+}
+
+/* <!-- <------------------------------------------------Bank/Top offer start  ------------------------------------------------> */
+
+
+
+
+
