@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+#main {
+
+    margin: auto;
+    margin-top: 50px;
+    width: 25%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    padding: 50px 30px;
+
+}
+
+div>h3 {
+    text-align: center;
+}
+
+input {
+    width: 93%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    border: none;
+    border-bottom: 1px solid lightgreen;
+   
+
+}
+br+button{
+    margin-top: 70px;
+}
+
+button {
+    margin-bottom: 10px;
+    display: block;
+    width: 95%;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+}
+#login{
+    color: #ffff;
+    background-color: #84c225;
+}
+
+p {
+    text-align: center;
+    font-size: 10px;
+}
+

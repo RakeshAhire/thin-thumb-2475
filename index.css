@@ -218,7 +218,38 @@
 
 
 /* <!-- <------------------------------------------------My smart basket start  ------------------------------------------------> */
+#carousel_veg{
+    width: 70%;
+    border: 5px solid gray;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.slide>button{
+    position: absolute;
+    top: 45%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 
+}
+.slide_btn_left{
+    left:5px
+}
+.slide_btn_right{
+    right:5px
+}
+#carousel_veg>.slide>div{
+    width: 20%;
+}
 /* <!-- <------------------------------------------------My smart basket end  ------------------------------------------------> */
 
 
@@ -247,10 +278,160 @@ h3{
 #bank_offer>div>img ,#top_offer>div>img{
     width: 100%;
 }
+hr{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 16px;
+}
 
 /* <!-- <------------------------------------------------Bank/Top offer start  ------------------------------------------------> */
+/* <!-- <------------------------------------------------Fruits and vegitables start  ------------------------------------------------> */
+
+#fruits{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between; 
+}
+#fruits_left{
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+#fruits_right{
+    width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    justify-content: center;
+    align-items: center; 
+    gap: 7px;
+}
+#fruits_right>div>img,#fruits_left>div>img{
+    width: 100%;
+}
+#fruits_right>div,#fruits_left>div{
+    border: 1px solid rgb(212, 206, 206);
+}
+/* <!-- <------------------------------------------------Fruits and vegitables start  ------------------------------------------------> */
 
 
+#stapels{
+    display: flex;
+    width: 70%;
+    gap: 5px;
+    margin: auto;
+}
+#stapels>div>img{
+    width: 100%;
+}
+#stapels>div{
+    border: 1px solid rgb(212, 206, 206);
+}
+#stapels>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+cursor: pointer;
+}
+
+/* <!-- <------------------------------------------------ Image slider  ------------------------------------------------> */
+
+#carouselExampleControls{
+    border: 1px solid rgb(212, 206, 206);
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+ /* <!-- <------------------------------------------------ Read More  ------------------------------------------------> */
+
+ #read_more{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 20px;
+ }
+ #read_more>p,p+ul ,#more>p{
+    color: gray;
+    font-size: 10px;
+ }
+
+ #read_more>h4:nth-child(2){
+    margin-top: 10px;
+ }
+
+ #more{
+    display: none;
+ }
+ #next{
+  display: block;
+  padding: 2px 15px;
+  border: 0px;
+  border:1px solid gray
+ }
+/* ---------------------------- footer css-------------------- */
+ .footer {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8vw;
+    border-bottom: 1px solid gray;
+  }
+  .footer>div{
+    color: gray;
+    font-size: 14px;
+ }
+  .footer li {
+    list-style: none;
+  }
+  .footer li:nth-child(1) {
+    color: rgb(132, 194, 37);
+    font-size: 1.1em;
+  }
+  .footer li:hover {
+    color: rgb(132, 194, 37);
+    cursor: pointer;
+  }
+  .footer-end{
+    width: 70%;
+    margin: auto;
+  }
+  .footer-end > div {
+    display: flex;
+    padding: 2rem;
+  }
+  .footer-end>div>div{
+    color: gray;
+    font-size: 14px;
+ }
+  .footer-end > div h1 {
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(132, 194, 37);
+  }
+  .ft-div {
+    width: 20vw;
+  }
+  .ft-div ~ div {
+    width: 70vw;
+    display: flex;
+
+  }
+  #download-img {
+    display: block;
+    margin: 0.5rem;
+  }
+  #footer-contact div {
+    size: 3vw;
+    border: 1px solid red;
+  }
+  .pay>p{
+    width: 10%;
+  }
+  .footer-end img {
+    width: 40vw;
+  }
+ 
 
 
 
