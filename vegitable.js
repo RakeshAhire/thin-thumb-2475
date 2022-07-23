@@ -1,4 +1,4 @@
-let prodData = [
+let vegData = [
     {
         Brand: "Fresho",
         Date: "Standard Delivery : 10AM To 6PM",
@@ -224,11 +224,12 @@ let prodData = [
         productprice: 36.61
     }
 ]
-
-display(prodData)
-function display(prodData){
-    console.log("abc")
-    prodData.forEach(function(ele){
+let cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+document.querySelector("#total_item").innerHTML = cartData.length + " " ;
+display(vegData)
+function display(vegData){
+    // console.log("abc")
+    vegData.forEach(function(ele,index){
         let maindiv=document.createElement("div");
         maindiv.setAttribute("class", "maindiv");
         
@@ -295,7 +296,11 @@ function display(prodData){
         addp.innerText="ADD";
         let logoimg=document.createElement("img");
         logoimg.src="https://cdn-icons-png.flaticon.com/128/117/117641.png";
-        logoimg.style.width="30%";
+        logoimg.style.width="25%";
+
+        cartbtn.addEventListener("click", function() {
+            addtocart(ele,index);
+        })
 
         cartbtn.append(addp,logoimg);
         inputdiv.append(qtydiv,quantity,cartbtn);
@@ -306,4 +311,13 @@ function display(prodData){
         document.querySelector(".container").append(maindiv);
 
     });
+    localStorage.setItem("vegData",JSON.stringify(vegData));
+}
+
+// ----------------------addtocart function--------
+
+function addtocart(ele,index){
+    cartData.push(ele);
+    alert("Addtocart Success!"); 
+    localStorage.setItem("cartData",JSON.stringify(cartData));
 }

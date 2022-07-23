@@ -26,10 +26,16 @@ input {
     margin-bottom: 20px;
     margin-top: 70px;
     border: none;
+    outline: none;
     border-bottom: 1px solid lightgreen;
-   
-
 }
+
+#name ,#email{
+    margin-top: 20px;
+    /* margin-top: 20px; */
+    outline: none;
+}
+
 br+button{
     margin-top: 70px;
 }
