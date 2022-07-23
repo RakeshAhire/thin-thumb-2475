@@ -1,3 +1,6 @@
+let userName=JSON.parse(localStorage.getItem("login_user")) || [];
+// document.querySelector("#username").innerText = userName.name;
+
 
 
 function moreRead(){
@@ -12,5 +15,18 @@ function moreRead(){
         btnText.innerText="Read More";
     }  
 }
+
+display(userName)
+function display(userName){
+    userName.forEach(function(ele) {
+    document.querySelector("#username").innerText = ele.name;
+
+});
+}
+document.querySelector("#username").addEventListener("click", function(ele,index) {
+    userName.splice(index, 1);
+    window.location.href = "index.html";
+});
+
 
 // <!-- ----------------------Append div here--------------------- -->

@@ -229,7 +229,7 @@ let bevData = [
 display(bevData)
 
 function display(bevData){
-    console.log("abc")
+    // console.log("abc")
     bevData.forEach(function(ele){
         let maindiv=document.createElement("div");
         maindiv.setAttribute("class", "maindiv");
@@ -308,6 +308,8 @@ function display(bevData){
         document.querySelector(".container").append(maindiv);
 
     });
+    localStorage.setItem("bevData",JSON.stringify(bevData));
 }
+
 
 
