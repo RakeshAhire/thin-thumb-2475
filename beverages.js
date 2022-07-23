@@ -227,6 +227,8 @@ let bevData = [
     }
 ];
 display(bevData)
+let cartData = JSON.parse(localStorage.getItem('cartData')) || [];
+document.querySelector("#total_item").innerHTML = cartData.length + " " ;
 
 function display(bevData){
     // console.log("abc")

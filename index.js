@@ -1,6 +1,8 @@
 let userName=JSON.parse(localStorage.getItem("login_user")) || [];
 // document.querySelector("#username").innerText = userName.name;
+let cartData=JSON.parse(localStorage.getItem("cartData")) || [];
 
+document.querySelector("#total_item").innerHTML = cartData.length + " " ;
 
 
 function moreRead(){

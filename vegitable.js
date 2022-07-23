@@ -225,7 +225,7 @@ let vegData = [
     }
 ]
 let cartData = JSON.parse(localStorage.getItem('cartData')) || [];
-
+document.querySelector("#total_item").innerHTML = cartData.length + " " ;
 display(vegData)
 function display(vegData){
     // console.log("abc")
