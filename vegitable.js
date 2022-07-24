@@ -320,4 +320,5 @@ function addtocart(ele,index){
     cartData.push(ele);
     alert("Addtocart Success!"); 
     localStorage.setItem("cartData",JSON.stringify(cartData));
+    document.querySelector("#total_item").innerHTML = cartData.length + " " ;
 }

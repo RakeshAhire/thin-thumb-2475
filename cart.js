@@ -1,9 +1,10 @@
 
 let cartData = JSON.parse(localStorage.getItem('cartData')) || [];
 document.querySelector("#total_item").innerHTML = cartData.length + " " ;
-
+totalPrice(cartData)
 display(cartData)
 function display(cartData){
+    document.querySelector(".container").innerHTML="";
     cartData.forEach(function(ele,index){
         let maindiv=document.createElement("div");
         maindiv.setAttribute("class", "maindiv");
@@ -90,14 +91,14 @@ function display(cartData){
 }
 
 // ----------------------addtocart function--------
-totalPrice(cartData)
+
 function deleteItem(ele,index){
     cartData.splice(index,1);
     alert("Remove Item Successfully!"); 
-    localStorage.setItem("cartData",JSON.stringify(cartData));
-    document.querySelector("#total_item").innerHTML = cartData.length + " " ;
     display(cartData)
     totalPrice(cartData)
+    localStorage.setItem("cartData",JSON.stringify(cartData));
+    document.querySelector("#total_item").innerHTML = cartData.length + " " ;
 }
 
 function totalPrice(cartData) {
